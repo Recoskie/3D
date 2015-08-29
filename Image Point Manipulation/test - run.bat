@@ -1,3 +1,3 @@
 @echo off
-call j:\java\bin\java.exe CornerScale
+call java.exe CornerScale
 pause

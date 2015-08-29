@@ -1,0 +1,192 @@
+The first folder "Wire frames and 3D Math" is a very simple mathematical 3D rotation though the 90 phases of the X, Y, and Z axis's in circular rotation you can test each rotation separately if you like, or even make your own sine function in the tailor series.
+
+Perhaps the most complex part about this code is the Perspective calculation which is the exact opposite rotation phase than to normal rotation to where the 3D points end up this value is used as how close the point have been rotated to the eye.
+
+At the end the 3D points are recalculated using there angles of rotation and are stored in the same order in X, and Y points just that there positions will be different depending on rotation.
+
+These recalculated 2d points from the 3D rotated points are drawn to by lines though the edge array.
+
+Understand that A negative value will phase oppositely to a positive though the center of the circular rotation of the 3D points.
+
+Also take into consideration that sine, and cosine have to do a full 180 phase for the negative Z back of an object to phase positively for the back to face the front in 3D rotation. Also take into consideration of the 90 phase difference of sine, and cosine and to when the sides are in the front view by 90 rotations.
+
+Taking all of the above into consideration, and including the bottom, and top elevation of the object you end up with orthographic rotation.
+
+Another thing is that the Phase 90 rotation of sine, and cosine make a perfect circle of rotation that is fractional to all orientations.
+
+The hard part of rotating 3D axis's is that you must know what all the 90 phases should rotate into the front view of the object in which is what we plot on to the 2D monitor surface from our point of view.
+
+The cube is the best way of showing 3D rotation of axis's to each 90 rotation to the relationship of all the axis's as they come into focus.
+
+Going from 0 to 90 each 90 to each 3d side is a perfectly 90 phase circular rotation.
+
+The perspective calculation is the exact opposite phases of the circular axis's though angles.
+
+The value of Z stores how close the point is though the reverse rotations.
+
+Take into consideration that 2D rotation is similar in which sine, and cosine phase 90 from one another into a perfect circle of rotation.
+
+In 3D we are finding the 90 phase for each 3D side in 90 phases to the sides of a cube.
+
+You can define the vertices where ever you want and they will rotate in a circle to there 3D phase positions by fractions of the angles.
+
+For example:
+
+The Z axis is the X axis when rotated 90 in azimuth because the back of the cube is now sideways across X on the 2D monitor.
+
+The value sin(0) is 0 so when the Z axis is multiplied by 0 it is 0, but when azimuth is 90 then we have sin(90) = 1 is X=Z*sin(90) which is the only time Z is sideways across the monitor in X.
+
+The values 0 to 90 slowly increase in angle till 1 making the X axis get bigger in value to the distance of each Z vertex point till they are plotted vertically across in 90 azimuth in X.
+
+As you rotate it slightly more from 90 and up the X axis starts to store the side points till 180 in which X then holds the opposite negative flipped phase of the X axis because cos(180) = -1 multiply a number by a negative makes the negative axis positive in front while positives go negative flipping the X axis's to opposite sides from the center.
+
+Then 180 azimuth to 270 makes Z go into the X side again, but in reverse sin(270)=-1 the negative axis is now positive in the front for the opposite side.
+
+Then we arrive back again at 360 this is only one rotation to what moves into X by rotation.
+
+When we Elevate to 90 we are looking at the top, so I want you to try to understand when we look at the front of something all we see is the X, and Y points, but when we look at the top we can now see how far back the object is going UP, and Down so we have Sin(90) = 1 times Z, so when elevation is 90 the value of the Y up, and down point on the computer display is the value of Z, and X across is still the same sides X across, but as we turn the object in azimuth we are moving the Other axis's in a circle from this elevated point, which is the X, and Z axis's.
+
+In the code sinT is azimuth, and sin is only 1 in 90 rotation, cos is 0 in 90 rotation so sin takes over in 90 azimuth and will be the value of the axis we multiply.
+
+In the code cosT is azimuth, and cos is only 1 in value in 0 rotation, however sinT is 1 in value using azimuth rotation 90 while at the same time cosT is 0 in 90 rotation.
+
+When we look at a set of 3D points across X, and up, and down Y with no rotation you will only see X and Y in front of your face.
+
+cos is 1 in 0 rotation so 1 times the X, and Y vertices is when we are staring straight onto a object X = cosT * X, but lets not do Y until we do X.
+
+When we turn the object sideways 90 azimuth we see how far back the object goes sideways across X, so X = sinT * Z which will only be Z across the display when azimuth is 90.
+
+X = cosT * X + sinT * Z
+
+This is without taking Elevation into consideration yet.
+
+sinP is the sine phase of elevation when 90 it is 1.
+cosP is the cosine phase of elevation when 0 it is 1.
+
+At Elevation 0 we see just the up, and down of the object.
+
+So Y = cosP * Y
+
+At Elevation 90 from the top we see how far back the object is going up, and down so at 90 we add sinP times Z into our up, and down Y on the compiter monitor.
+
+Y = cosP * Y + sinP * Z
+
+Now this is the complex part when we are looking at the top of an object, and turn it in a circle with azimuth (X = cosT * X + sinT * Z) we are moving our current axis's at the top by times azimuth. so we end up with "cosT * sinP = cosTsinP".
+
+At 90 Elevation, and 0 azimuth the Z is Up and down in Y.
+When we turn it 90 from the top of the object by 90 azimuth Y is now the sides that where across in X instead of Z.
+
+sinP * Z must be 0 when azimuth is 90. So we multiply sinP by cosT in which cosT is 0 in 90 azimuth and sinP is only 1 at the top view.
+
+Y = cosP * Y + cosTsinP * Z
+
+Now Y must be the value of X in up, and down when "90 Elevation"="sinT", and "90 azimuth"="sinP" so sinTsinP * X.
+
+Y = sinTsinP * X + cosP * Y + cosTsinP * Z
+
+Now Z, and X go in a circle every 90 phase from top view only when elevation is 90 otherwise elevation sinP will be 0 (Y = sinT * 0 * X + cosP * Y + cosT * 0 * Z) and the up and down for Z, and X oposate to "X = cosT * X + sinT * Z" will be 0 though the 90 azimuth phases, and X will only move in a circle, thus Y is then Just Y though cosP * Y, thus cosP will only be 1 if elevation is 0.
+
+X = cosT * X + sinT * Z
+Y = sinTsinP * X + cosP * Y + cosTsinP * Z
+
+//compute an orthographic projection
+float x1=cosT*x0+sinT*z0;
+float y1=-sinTsinP*x0+cosP*y0+cosTsinP*z0;
+
+If we plot just x1, and y1 we will only get perfect circular movement around all the sides when we rotate the 3D points to a given angle.
+
+We want to calculate how close each point is into a value of Z from the center axis.
+
+This time what I want you to think about is if I am staring at the front of a 3D shape then look at the top of the 3D shape I see how far back it goes.
+
+If I keep my head in the same position, and grab A different shape that is longer in Z from the center like before with my head, and hand in the same position the more it blocks my view from the front of the 0 azimuth, 0 elevation rotation, and Z is only in, and out while looking from the front because from the top Z is up, and down the monitor in Y.
+
+Z = cosTcosP * Z
+
+When only staring at the object in X, and Y from the front because in, and out is Z, but as we turn it sideways, or up 90 in elevation A different axis is in, and out to it's distance so cosTsinP will only be Z till 90 in elevation, or 90 in azimuth, does not matter which reaches 90 first.
+
+When looking at the object in 0 azimuth, "90 elevation"="sinP" rotation Y is Z, and X is X because we did not turn the sides of the object. Y remains in, and out regardless of azimuth while in 90 elevation, because when we are looking straight at the object Y is up, and down, but when we look from the top the Y up, and down is now the height to our eye from the enter in top view.
+
+Lastly azimuth rotation goes in a circle to the Z, and X axis's from top view so Y is still in and out so we only need to multiply by sinP in the 90 elevation phase also azimuth spin does not change the height up into our eyes from Y.
+
+Z = cosTcosP * Z - sinP * Y
+
+Now when we are back at 0 elevation sinP is 0*Y.
+At azimuth 0 we have cosTcosP = 1 * 1 = 1 * Z which Z is in, and out to our eye from the front of the 3D model, but when we turn the object 90 azimuth we have cosTcosP = 0 * 1 = 0 * Z in which Z is no longer being used because we are looking at the side. When we turn the Object to its side from the front view X across turns with it to the in, and out perspective.
+
+Azimuth 90 = sinT, elevation 0 = cosP then times X. It is important that it only phases on elevation 0 because when we turn an 3d model from the top view it goes in a circle, but from the front we see the sides switch.
+
+Z = cosTcosP * Z - sinTcosP * X - sinP * Y
+
+//now adjust things to get a perspective projection
+float z1=cosTcosP*z0-sinTcosP*x0-sinP*y0;
+
+//calculate Z over front back perspective of near and near to object as the distance your looking at it from
+x1*=near/(z1+near+nearToObj);
+y1*=near/(z1+near+nearToObj);
+
+The closer the Opposite axis is the larger Z will be to the eye thus the closer the Axis is.
+
+We calculate near/(z1+near+nearToObj) as our focal point then multiply it to our 2D point distance.
+
+//calculate Z over front back perspective of near and near to object as the distance your looking at it from
+x1*=near/(z1+near+nearToObj);
+y1*=near/(z1+near+nearToObj);
+
+On the 2D surface the bigger the added value of z will be to our x1, and y1 rotated point will make the point take up a bigger surface area as it is closer to our eye.
+
+Each vertex is looped though from 0 to the last stored vertex and is multiplied by the angle to the what comes in view in X and Y on the 2D surface.
+
+Each vertices is stored from 0 to last in the same order in the points array.
+
+//the 0.5 is to round off when converting to int
+//and set up a piont that the edge array draws lines to
+points[j]=new Point((int)(width/2+x1+0.5),(int)(height/2-y1+0.5));
+
+The width, and height of the window is divided by 2 to center the 3D model in the middle of the window.
+
+//draw the wire frame
+for(int j=0;j<edges.length;++j)
+{g.drawLine(points[edges[j].a].x,points[edges[j].a].y,points[edges[j].b].x,points[edges[j].b].y);}
+
+The edge array stores tow numbers for which point to draw lines to remember when I said the order the vertices went in is the same just now they are X, and Y points to where they sit on the 2D surface after 3D rotation.
+
+By setting up the arrays as follows in the internalize section of the code you will make a 3D cube of points for the wire frame version of the 3D engine.
+
+int azimuth=35,elevation=30;Point3D[] vertices;Edge[] edges;Point[] points;
+
+//define a 3D point object to be stored in vertices array.
+
+class Point3D{public int x,y,z;public Point3D(int X,int Y,int Z){x=X;y=Y;z=Z;}}
+
+//define a Edge object to be stored in edges array to which 2 vertices draw a line to in weir frame after 3D rotation calculation finished of vertices.
+
+class Edge{public int a,b;public Edge(int A,int B){a=A;b=B;}}
+
+vertices=new Point3D[8];
+vertices[0]=new Point3D(-90,-90,-90);
+vertices[1]=new Point3D(-90,-90,90);
+vertices[2]=new Point3D(-90,90,-90);
+vertices[3]=new Point3D(-90,90,90);
+vertices[4]=new Point3D(90,-90,-90);
+vertices[5]=new Point3D(90,-90,90);
+vertices[6]=new Point3D(90,90,-90);
+vertices[7]=new Point3D(90,90,90);
+
+edges=new Edge[12];
+edges[0]=new Edge(0,1);
+edges[1]=new Edge(0,2);
+edges[2]=new Edge(0,4);
+edges[3]=new Edge(1,3);
+edges[4]=new Edge(1,5);
+edges[5]=new Edge(2,3);
+edges[6]=new Edge(2,6);
+edges[7]=new Edge(3,7);
+edges[8]=new Edge(4,5);
+edges[9]=new Edge(4,6);
+edges[10]=new Edge(5,7);
+edges[11]=new Edge(6,7);
+
+In the next document you will learn to fill in the Edge which is 3D engine V2. In Engine V3 you lean to loop though pixels
+
+in a picture to fill in edges line by line by fractions, and how to remove fraction tear by filling.
