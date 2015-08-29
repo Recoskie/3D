@@ -1,0 +1,346 @@
+note all calculations in my formula are not float point numbers for example 0.25 does not exist only 0 would
+or 0.somthing is 0.nuthing what im saying is im not useing numbers that when you go 1/3=0.33333333
+dose not exist 1/3=0 that is what the output would normaly be now we can not a number and get a 0.somthing value
+for the raminder rounded closest to the nearest 10 digit in a computer a number that uses 0.somthing is refered
+to as a float point number the type of number im useing is a integer type wich means it can not have a float point value
+0.somthing to tell you the truth computers have a chip built right into the system that does the math calculations
+and it operates with integer values not every computer operates with float values and has to emulate the float point
+number and pluse even with it built in the computer still has to comlete 3 calculations of 3 difrent sections of a float
+point number for example what would take floats to complete a operation is 3 times longer than integer
+
+what are the difrences in a math calculation done by the integer compeared to a float
+
+note i use the folowing charicters in text format to describe a math operation
+
+add=+
+subtract=-
+divide=/
+multiply=*
+division remainder=%
+
+heres is the difrence betwean a float and integer
+
+float=90/7=12.857142
+integer=90/7=12
+
+now the difrence is that we have less acuracy it finds how meny times the number first into 90 7 subtracts into 90 12 times
+then the left over value is how much is left over boken into the nearest 10 so when its re multiplyed it gets back to the
+origanal number perfectly but in an integer we can not do that and we can not represent angles and perabals in a integer
+but i have found a whay to do it and to impove the efishancy of sine and cosine operations to work in more computers
+more qwickly
+
+now the % is used for remainder 90/7 did not devide by 7 perfectly what whas the left over at the last subtraction
+done by the computer well we could go 12*7=84 then 90-84=6 wich it whas off by 6 wich 7 whas 1 number to small to
+fit into 7 how do we get 12.857142 we take the remainder and add a 0 to it gives us 60 then we subtrackt the number 7
+into wich is what we are dividing by 60/7=8 wich means the output is 12.8 it subtacts 8 times and has a remainder of
+4 then we add a 0 to 4 making it 40 note 4*10=40 we are seaing how meny 10 digets it fits into now 40/7=5 so now
+we know its 12.85 then 40%7=5 then 5*10=50 then 50/7=7 then output = 12.857 after so meny decanal places the computer
+is desinged to stop and you can begin to see how time consuming this becomes for the computer even if it's bult in
+it has to do so meany more divisions of the same number over and over and over and if it's used multiple times
+in a calculation it becomes vary notacble
+
+the idea of useing integer is vary clear since all the muchine dose is 90/7=12 done like this
+
+fits onece = 90-7=83
+fits 2 times = 83-7=76
+fits 3 times = 76-7=69
+fits 4 times = 69-7=62
+fits 5 times = 62-7=55
+fits 6 times = 55-7=48
+fits 7 times = 48-7=41
+fits 8 times = 41-7=34
+fits 9 times = 34-7=27
+fits 10 times = 27-7=20
+fits 11 times = 20-7=13
+fits 12 times = 13-7=6
+
+if 6-7 = nagative stop output remainder 6 devides 12 times
+
+this is what the integer dose it subtacts and gets how meny times it subtracts and also the reamider at the same time
+well a float point number would do this same operation over the remainder agen and agen and agen and can be used to represent
+a graphics point bater since there is not half a pixle on the computer monitor we have to get rid of the decanal place in a float
+number anywhays
+
+now lets go in depth on decanal place values since it's important to know to work with sine and cosine
+for example if i have the number 0.5 what is 0.5+0.5 we look behind the dot and 5+5=10 wich the decanal place is set to 0 and the number 1
+moves to the left and becomes the decanal point making it 1.0    0.5+0.5=1.0
+but what if we have more than one number behind the decanal place like 0.25 and we add 0.25+0.25 first we move to the farthest number to the right wich is 5
+and add it the the other number in the same lowcation wich is 5 and 5+5=10 so where the 5 use to be is 0 and the 1 is in the number to the left
+so now we move over to the next set of digets wich is 2+2=4 but remeber 5+5=10 so this is what happens
+
+25
+25
+
+4
+10
+
+as you can see the 1 moves over into the 4 the final output is 0.50 because 4+1=5 and we usaly get rid of the 0 making it 0.5
+now sin and cos both remain withing the value of 0.somthing and 1 and -1 no mater what you enter into it
+but what hapens when you multiply a number by them for example i type the number 30 into the calculator and hit sin i get 0.5
+now if i multiply that number by a number i get 0.5*50=25 half of the number because 50 is how meny times it adds 0.5
+each time we add 0.5 it takes 2 adds before it's worth 1 so the output is 0.5 added 50 times wich if we add it 50 times it
+will be half of 50 the same thing happens when we go 50/2=25 wich we see how meny times 2 digets subtract into 50
+now if we devide 1 by 2 1/2=0.5 is half because 1 does not fit into 2 the remainder is 1 then 1*10=10 then 10/2=5 wich half
+of 10 is 5 and there is no remainder so the muchine stops whiy does this happen if we take any full number and devide it by 2
+we are doing a math eqation that will always have a 1 remainder before it devides into 2 so 10%2=0 11%2=1 12%2=0 13%2=1 14%2=0
+thats all it is and per each remainder of 1 to a smaler of times fits into 10 and 10/2=5 so the decanal place value is how meny
+times we can add the number to = the same amount it whas before by starting over with 10 more wich it has to add that per each
+calculation and when it is 10 it adds to main number working it out perfectly every time all it is is subtract and add a size togather
+
+its just that there is fancyer whays of doing it like 0.5*50=25 or 50/2=25
+
+naver forect this rule and 1/what ever number you want creates a number that will eqaul how much it takes to re add back to the number 1
+like 1/1=1 and 1*1=1 will always resoult the same output because we are counting by 1 and subtracting by 1 so it's just like counting
+to that number but if we do 1/50=0.02 then the number 0.02 is used to be add 50 times to add back to the number 1
+
+now for example we have to add 2 5 times to add to 1 then we have to add 5 10 more times to add to another value of 1 until
+
+it reaches 10 in the last coulum so 2+2+2+2+2=10 then we have to add that 10 more times where the 0 is before the end of the dot
+wich 5*10=50 wich 50 would be the first time this value eqauls 1 so 0.02*50=50 wich all we do is ceap moving 50 over 10 in the decanal place giving
+us the corect amount neaded for 1/50=0.02 now if we multiply 0.02 by 100 100 is made of 2 50 calculations wich 100-50=50 and 50-50=0 wich fits 2 times
+so 0.02*100=2 because it is equal to 2 ones wich is the same thing as suntracting it by 50 instead of adding to 1 per each 50 100/50=2
+
+now each value of sine is the same as subtracting the number when multiplyed by a number is there a limitation to how small a number can be no
+we can be like 0.00000000000000000000000000000000000000000000000000001 as meny 0 as we like then all we have to do is add one and when its 10
+add 1 to the next number behind it in reality is there a limet to how big a number can be 100000000000000000000000000000000000000000000 no
+we can make it as lengthy as posable this is knowen as infinity but since computers are a muchine it stops after so meny numbers
+
+now we know our numbers are being subtrackted by sine when we multiply by how big of a number we are useing it for when is our value
+not subtracted by sine when you use 90 and hit sine or 180 or 270 or 360 whiy because it will output 1 or -1 or 0 per each 90
+
+we start at 0 then 0+90=90 then 90+90=180 then 180+90=270 then 270+90=360 and 360 and above is like starting back at 0 and adding 90 over agen
+wich sine has a pateren at every 90 wich goes
+
+| input| 0 | 90 | 180 | 270 |
+|output| 0 | 1  |  0  | -1  |
+
+when it reaches 270 then you enter 360 it starts back at 0 and repeates the pateren over and over and over and over agen
+
+270+90=360 then 360+90=450 then 450+90=540 then 540+90=630 wich if we create 2 graphs with them at both the difrent values we get the same output
+try it on any calculator
+
+| input|  0  |  90 | 180 | 270 |
+|output|  0  |  1  |  0  | -1  |
+| input| 360 | 450 | 540 | 630 |
+|output|  0  |  1  |  0  | -1  |
+
+it will reapet no mater how far you go
+
+what is the values betwean the numbers 1 and -1 and 0 a decenal place number that is multiplyed by sine or cosine
+
+betwean 0 and 90 is a smaler number that slowly gets biger till the number 90 untill its the number output 1
+then from 90 to 180 is a number that starts at 1 and gradagly gets smaller till its 0
+then at 180 it does exactly the same output it did at 0 its just that thay are nagative
+from 180 to 270 it gradgely gets biger till its -1 wich all values are nagative then 270 to 360 it gradgely gos back up to 0 but in nagatives
+and 360 is where it reapetes agen
+
+now if you do not know what the use of sine and cosine can be used for get a peace of graph paper with sqears
+and add 10 per each number of sin and do what i say lets say we decide to use the number 50 as the size of sin to use
+
+so then we start at 0 with sin and sin 0=0 then we multiply 0 by 10 0*10 then we add 10 0+10=10
+
+now go on your graph paper and fill in the 10 sqwear and move one sqwear across the paper to put your new sqwear and if you
+use the folowing formula over and over on the paper till 360 where it reapets you will see what it shapes numbers to
+
+sin(0)=0 0*10=0 0+10=10
+
+sin(10)=0.17 0.17*10=1 1+10=11
+
+sin(20)=0.3 0.3*10=3 3+10=13
+
+sin(30)=0.5 0.5*10=5 5+10=15
+
+by the time your done you should end up with a perfect cerve on the paper wich the first cerve is the first 180 the last cerve
+is the last 180 wich the nagative values subtracted into the number 10 and when it whas -1 then 10 becomes -10 then 10 subtracts
+your size you used so what you multiply sine with you add it to sine if you want it to stay as a point on your graph
+
+now the computer monitor is one big graph that you can place these points on and have it output the same cerve by useing the same formula
+wich every point is across the graph and up and down in this case per each sine calculation is adds one to the distance across of the graph
+per each calculation so each piont and be set to up and down the graph with the output of sin though all 360 values multiplyed by 10
+then added by 10 giving you the output on the computer monitor
+
+now imagine the 2 180 sections of the cerve above and underneath each other thay are both opaset and both cerve perfectly like
+a circal at the top and bottom making a circal now you know what sin is used for it takes a point from a circal and outpus it
+that are multiplyed by a number of how big of the circal it uses the number pi it's just like multiplying pi to find out the outside
+distance of the cercal if you do not know what pi is search up on it now insead of asking for the outside distance we chop it up
+into amounts of 360 and over 180 to get the posative and nagative affect for up and down then you take what you call a taylor siereas
+and cerve it into the closes numbers over 2 and 180 as half the cercal wich pi whas 3.14 and never ends because the biger the circal
+the difrent the outside rateio changes so now the number 2 we get close to the number 1 then we use a fraction of the lengths of pi
+to narrow down its decanal place then what ever you multiply into the taylor sereas is going to be an incresment of ther circal
+then narowed down the decanal and number places and it has a pateren but the pateren naver reapetes numicerly in numbers
+
+now you know how sin works and how your float point numbers work and whiy all this works but what do i mean by numbers that reapeat
+
+a number that reapetes then the muchines has to stop at it's limet
+example 1/3=0.3333333333333333333333333 and naver stops how
+
+first what is 1 subtracted by 3 1-3=-2 then its nagative then increse the number we are divinding into 1*10=10 then 10/3=3
+and since 10/3 will always output 3 no mater how far you calculate then it will always be the same calculation then the number
+will naver end and ceap going 0.333333333333333333333333333333333333333333333 infinate theres even numbers that reapeate with a cuple set
+of digets  90/7=12.857142 857142 857142 857142 857142 857142 infanet after so meny 10 it starts back at 10 making it reapet with a set
+of digets but the number pi is a incresement pateren that is a multiple size of the last digets though the 10 amounts making it always
+change and get biger affter so meny digets are used pi increses to a new set of digets pateren and in the end the goup size of digets
+is infanet and the circal is one of the natruel shapes and in cemestry how each partical has to be balaced and all have a value
+of posative and nagative are balanced to 0 or comes apart of change where a balanced atom is round in natrue under the micro scope
+wich the circal also recpresents eaxtreame good and bad wich is also the meaing of the yin yang sing in chinese
+
+wich the circal is also used in alcamy and recpresents transformation across it's pionts prity much in the same maner of a atom
+or partical now imagin appliying change to a point of the mutearl in the 3D piont changing the shape of the mutearal
+you can only change the shape but cant change the mutearl it's self wich the other part of alcamy is eqaul exstage
+wich is the balance of the mutearl it must add up to 0 from it's nagative and posative is wich we call cemestry today
+but the transformation takes place within the cercal thay use to call them alcamy circals
+
+now how does cosine work it is the same as sine the difrence is that cosine stats at 90 for example
+
+sin(270) = -1
+270+90=360
+cos(360) = -1
+
+so now i create a function that goes though the value you enter now i call this function the phase shift function is
+converts your number of your angle out of 360 to the up and down balance of the circal btwean each half of the circal
+
+first we want to know where the number ends up in the pateren of 360 so we subtract 360 into the value till its
+the actule value the user entered into the function from 0 though 360
+
+angle=angle%360
+
+then we devide it by 90 but remeber we are useing integers so operations are faster but we get no decanal point
+i devide the angle by 90 it gives me how meny 90 fits into what value of 360 its on for the up and down
+heres a example number
+
+1432
+
+1432%360=352
+
+then 352 is a value that lands in 360 in the reapets of the circal
+
+352/90=3
+
+then we are under phase 3 of sine then we get the value thats going to be used in phase 3 of the circal
+
+wich is the eqwivalent of sin(270) = -1 to 0
+
+so instead of a float point we would go 90 to 0 but first we have to find what the value of 90 is of 352
+
+352%90=82 so now we know that for example 0 would be 90 for the starting point of phase 3 to get the nagative
+affect to 0 till the next 90 we subtract 90 int the value up to the size of 90
+
+82-90=8 wich we are realy close to 90
+
+now from 1 to 0 is the amount the 90 is worth
+
+now if you know a lital bit of javascript the function can look like this if you dont know javascript do a shearch on it
+
+function Shift(angle)
+{angle%=360;
+phase=Math.floor(angle/90);
+angle=angle%90;
+if(phase==1||phase==3)
+{angle=90-angle;}
+if(phase>=2)
+{angle=-angle;}
+return(angle);}
+
+notec that i use Math.floor this stops javascripts default behavor to convert it to a float point when deviding
+Math.floor gets rid of the float point emelation like Math.floor(1.27553) = 1
+
+try it out on all numbers of 360 degreses
+
+it compears what phase its on and does apropertate action for how thay move but now if you try it out on 90 up and down a graph
+you get a trangle shape because we are only up and down by 1 number per rotation all we are woryed about is to get the up and
+down shape wich can be cerved affter we know the maxum number output is 90 and -90 and 0 up and down because of 360 broken up
+if(phase>=2) is affter 180 it reverses the output of the 2 phases used affter by converting number to nagatives and a nagative
+becomes a posative like tow nagatives become a posative -50+-50=50
+
+now you understand what this function does it only contains the blue print of sine and cosine but now we want to be able to
+use it over a value of size like 400 or 800 like when we multiply sin by a value well we would have to chop the size
+over the position of 90 the blue print function is at so we can get a number that leads up to the size you chose till
+its 90 is the full size i call the function ChopSize since we cant get perfect acruacy with integer we nead to chop it
+we find if 90 fits the number by deviding by 90 wich we use the value over to describe a 1 or 0 over 90 wich we multiply
+by 90 to get if the number whas 90 or not then we take out value of 90 and the output is over 90 multiplyed by 90
+wich out will eqaul our full amount if 90 is reached  then we take the remainder and multiply it by the angle then devide
+what it is over out of 90 the output is cut into a subtraction over our size over what the value of 90 is wich looks like this
+
+function ChopSize(s,a)
+{over=Math.floor(s/90);
+err=s-(over*90);
+out=over*a;
+out+=Math.floor((err*a)/90);
+return(out);}
+
+i still see impovment for this function its good enught all divisions have no float points and is done with flat number
+now we can adjust the size of our linear triangle shape blue print of sine cosine now we can use the trinagle shape in
+3D graphics but it will be off by a tiny litle bit of a perfect round shape when somthing terns it would be alital notaceble
+but not much so we can write it like this
+
+function sin(size,angle)
+{angle=Shift(angle);
+angle=ChopSize(size,angle);
+return(angle);}
+
+function cos(size,angle)
+{angle=Shift(angle+90);
+angle=ChopSize(size,angle);
+return(angle);}
+
+sine starts at 0 cos starts 90 after half of a cerve of a circal in this case its a trinagle blue print
+now how do we multiply 2 sine and cosine angles togather we multiply them togather wich is a multiple of there
+size then we devide them by there size and remeber there is no float pointing reqiered for this calculation
+
+function sincos(s,a1,a2)
+{s=sin(s,a1);
+c=cos(s,a2);
+o=s*c;
+o=Math.floor(o/s);
+return(o);}
+
+just pulg the blue print of the shapes togather of sine and cosine and we multiply them wich thay are just a multiple of what
+there chop size whas any whays then divide them by the size without the float point
+
+if you want to test this in a programing linguge that suports true integers and dose not do float point by default
+use somthing like java and specify everything as a int type and it will still operate the same whay
+
+now we have our blue prints of the shape of sine and cosine in a integer and i explained how to create there blue print
+it's time to explain how to convert them to a perfect cearve of a circal that is off by so lital it does not make a difrence
+what i like to call the integer non cearved sine cosine is leaner sine and leaner cosine because thay are just the up and
+down leaner shape
+
+ok now you may think im crazzy and this is truly hard to explain but what i do is take 2 points of the blue print of the
+circal and multiply them togather then devide it by size giving me the perfect cerve of when the nagative and posative come
+togather to create the natrule shape of the circal wich is a law and natruly happens
+
+function CercularCerve(size,angle){angle%=360;
+if(angle<180){out=ChopSize(size,Shift(angle+90))*ChopSize(size,Shift(angle+270));
+out=Math.floor(out/size);out+=size;}
+else{out=ChopSize(size,Shift(angle+90))*ChopSize(size,Shift(angle+90));
+out=Math.floor(out/size);out-=size;}return(out);}
+
+this time we have to figer out if you want the top of the circal or the botom of the natrule form shape so we agen
+create another function like Shift but that is more complete now the first beging of the cercal is the posative of sine the nagative
+of the other size of the circal wich is Shift(angle+90) and Shift(angle+270) that are set to your size by chop size and multiplyed by
+there size value output over you angle of the select spot of the circal then we devide it by the size you chose and make shere no float
+point operations are being used then we add it to size wich is it's top balance then the other size of it at 180 is 90 over 90
+but this time we subtract the value of size to make up the nagative end of the circal then we return the output then we wrire
+out sin and cos and sincos and sinsin and coscos functions in the folowing maner
+
+function sin(size,angle){out=CercularCerve(size,angle);return(out);}
+
+function cos(size,angle){out=CercularCerve(size,(angle+90));return(out);}
+
+function sincos(s,a1,a2)
+{s=sin(s,a1);
+c=cos(s,a2);
+o=s*c;
+o=Math.floor(o/s);
+return(o);}
+
+and this is the gratest acruacy you can get with only integer values without float point values and this should help you understand
+all kinds of things in this world since the circal is a big part of its atom mater shape thats natrule and even ying yang and alacamy
+and cemistary this stuff can appear in all cinds of fealds that are based off the circal even balence this formula i desinged
+reflects it Damian Recoskie
+
+note even primative atoms at there simplest contain the 0 value center nutrion value and the electron nagative and protion posative
+and the first number of PI at its smalest if it's meshered with mater it starts at 3 then 3.1 im taking smaler than you can measher
+with meashering tapes and note it is always increasing our population can increse our bodys grow mater is aloways increasing
+enargy can not be destoryed and is always growing when you go deap enught insode particals you enter a world where enargy
+is generating on it's owne but is extramly small but peoples bodys grow much faster

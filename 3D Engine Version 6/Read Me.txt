@@ -1,0 +1,9 @@
+this version should be able to draw normaly without havting to pic what draws aftter what
+
+use set Sort Data function on image data when first loads to find what is most visable
+
+when it calculates points ugg it will not impove spead anywhays since perspective
+
+still has to be calculated the only things left for performance is transparincy
+
+and length compreshion

@@ -1,0 +1,5 @@
+It Is easyer to test my algaritham separtely
+
+what is so specal about this version that it does not calculate any pionts outside the drawing area
+
+the math is optimized more fixed errors with fliping and ratoation of the 4 pionts

@@ -1,0 +1,12 @@
+This whas desinged by damian recoskie
+
+what if i think of a image as a bunch of lines and fill in the pixels useing
+
+even less power of the processor maby a couple thousand lesss calculations would happen
+
+will the output be the same it should but this will be the fastest whay i can create
+
+3D plane images that rotate wich the computer may be able to handel
+
+
+SUPPER FAST 3D ROTATION Created by DAMIAN RECOSKIE

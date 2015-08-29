@@ -1,0 +1,37 @@
+the idea of this version is to subtract the lengths over a ratio of each 90 tern
+
+rlsin(size,angel);
+
+the output is the left over close to the rotation value of 90
+
+for example the angle of sine at 90 is 1 the angel at 0 is 0 with sine
+
+the rest are a fractional amount like 0.5 is half the length wich half should be visable at
+
+angle 45 in linear what does rlsin stand for Rotation Linear Sine angle
+
+it's done in a whay to makew it posable to do 3d graphics without float pointing
+
+wich if the computer only had integer point hardwear this works awsome and integers are
+
+faster than float pointing by 2 times and a bit wich increses spead gratly for emulated 3d
+
+graphics
+
+my last idea of my x y z thorem is a cerve function to use integer value to perfectly
+add the round affect of non linear 3d graphics without ever useing float piont ever agen
+
+in my mind it's posable to do 3d graphics without float pointing just stright numbers
+with add subtract
+
+my formula is running 100% but i only have one problem now i have to find out a whay of combinding
+2 angles toghter by hand i cant reliy on mathimatical transformation now i have to rely on
+my logic of understanding angles
+
+if both numbers are nagative it becomes a posative if both numbers are posative it stays positave
+
+if a posative is multiplyed by a nagative it becomes nagative
+if a nagative is multiplyed by a nagative it becomes posative
+if a posative is multiplyed by a posative it becomes a positave
+
+this is true in multiplying angles when thay are transformed

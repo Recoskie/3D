@@ -1,0 +1,19 @@
+now instead of thinking of it as lines now think of it as 4 corners and we shrink the x lengths to the
+
+bottom 2 corners gives us the decresment or incresment of the next lines
+
+and the first y distance to the left over the y distance to the right gives us the changes in each y
+
+distance per line
+
+uses a toltal of 4 3D piont calculations of exessive float pointing and multipalcation
+
+wich now is deacesed by milions of calculations the rest is just add as sloping to each point
+
+draw image normaly wich runs eaxtramly fast now affter my impovments
+
+BY Damian Recoskie
+
+Y sloping complete
+
+X sloping is complete

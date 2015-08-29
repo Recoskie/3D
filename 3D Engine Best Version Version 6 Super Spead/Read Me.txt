@@ -1,0 +1,13 @@
+this time i use super fast rotation that uses no float pointing except for 4 points per rotation
+
+the rest is visable over half wich no longer have to be calculated just looped when legths shink
+
+thay no longer nead to be calculated do not do work in the graphics then do graphics by drawing outputed pionts
+
+less function calling increses spead no more graphic functions beaing called super fast 3D emulation without
+
+the 3D graphics card do not draw out of bounds of drawing area and do not calculate out of bounds pionts
+
+skip them small draw area extreamly fast 3D over 500 by 500 drawing area only about 20 to 80 calculation cuze transformation
+
+even in complete 3D world super spead even run on older computers even windows 95 with 4.8 mghz processor

@@ -1,0 +1,99 @@
+is this new i dont know but i discovered somthing that can be put into mathimatic terms
+for compersion the output should be a 1 or 0 what simbol shall it use i dont know
+
+for example divishion finds how meny times the number fits now i only want how meny times it fits
+without the float point numbers wich every calculator contains both int anf float operations
+which int is created for the float point circut to run any whays the calculator may not have a int button
+but siyntific do
+
+like 5/3=1.666666 if we use int on it it should look like int(1.66666666)=1 or int(9.217217217)=9
+
+i will not repetively use int in my formula since all numbers that you calculate in formula should all be int
+
+type
+
+now if i compear is 7 eqaule to 8 7/8=0 no because it does not fit one time wich is mathimaticly expressed
+
+will 7 eqaul 7 7/7=1 yes it fits but there is one problem with the compersion what if it fits 2 times
+
+7/14=2 then i have a problem the compersion would be rong
+
+if its biger it must eqaul 0 2-1=1 1/2=0.5 4/5=0.8 since the number is biger and the devide into number will be smaler
+resaults into a fraction in float a float point number in a integer it resaults into 0 now what if the input is a value of 1
+
+1-1=0 then 0/1=0 still the problem remains but if it fits one time im at the center point of the number if i subtract 2
+
+instead of 1 1-2=-1 -1/1=-1 i get the opaset number of 1 any number biger then 1 will resault into 0
+
+2-2=0 0/2=0
+
+4-2=2 2/4=0
+
+because we will divide into a smaller number and 2 works perfect as a center point if its equal to 1 because of subtraction
+
+output is -1 all other values are 0 how can i fix this by multiplying by -1 when 2 nagatives multiply output flips to posative
+
+-1*-1=1 worked then if i write the full compersion formula
+
+a=90
+b=80
+
+o=(((a/b)-2)/(a/b))*-1
+
+"a" and "b" are the tow numbers being compered now formulas that nead alital bit of compersion can be acomplised by
+Mathimatics
+
+now imagin you only want to subtract 90 when the input is 180 with this function you can do this
+
+myFunction(180,180)=1
+
+now imagine what 1 can do
+
+0*90=0
+
+1*90=90
+
+so now if it is eqaul our compersion amount is used if not the calculation is not done wich can be used as a simbol on paper
+with a number infront of it with what it compears to
+
+so
+
+a=180
+
+b=myFunction(180,a)*90
+
+a=a-b;
+
+where the subtraction naver hapens if its not 180 an entier compersion can be done fully with matimatics
+
+even less than grater than and when you multiply by the compeared amount you get the output
+
+now imagine this you have an entier set of calculations donw with compicated math then you have the output
+
+and only uses those calculations at a spucific calculation then affter the output multiply it by this formula
+
+i created (((a/b)-2)/(a/b))*-1 and there you go math is only logical compersion any whays base on logic
+
+every bit of mater in this world can be compered with the enargy of another peace of mater or particles and atoms
+
+to resoult what would happen and what thay resenate at to the change to resoult the color thay change to and disply
+
+it on the screan of a computer monitor and to see what re action it has to other particles or atom affter wich is the entiyer
+
+world wich if done corectly it may be posable to emulate our entiyer world if a powerfull enught muchine whas built
+
+this is what makes the computer named after calculating muchine to be able to do so much when everything can be cpmeared
+
+of how much and how much change which 3D graphics is entiyerly mathimaticle of wich points are most visible
+
+by multiplying betwean 1 and 0 and -1 wich is close to the same as my compear function wich is sine cosine but thay are based
+
+off the natrule shape of particles and what you do is set them on points of where thay are in the circle and then you change
+
+the position of the circle seaing all points of a 3D shape called the x y z thory which is competly mathimatical
+
+you can use mathimatics to put yow sounds together you can use matimatics to put tow voltages together
+
+you can use mathimatics to put 2 particles together to calculate there spin from the enargy size though there enargy of magnatizim
+
+you can even calculate the color thay will make

@@ -1,0 +1,7 @@
+this version is desinged to be ran to output 3D models in games
+
+or just to view a 3D model
+
+this version is used with application and is not the full application
+
+and uses a 3d format this is created by damian recoskie
